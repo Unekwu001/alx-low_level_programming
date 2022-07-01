@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc moon.c -o moon.o
