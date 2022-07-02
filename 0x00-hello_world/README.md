@@ -7,3 +7,6 @@ in a nutshell , the 0-preprocessor file was used to compile the main.c file(alre
 
 1-compiler
 Renaming the output file to be same as the compiled file. but with an "o" extension.
+
+2-assembler~
+Here, the gcc -S is used to only compile but does not assemble. The outputed file always has a .s extension by default.
