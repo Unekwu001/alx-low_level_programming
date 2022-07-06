@@ -8,11 +8,10 @@
 #include "main.h"
 
 /**
+ * print_alphabet - this is a description for the function print_alphabet.
  * main - Prints "_putchar" followed by a new line.
  *
- * Return: Always (0) Success.
- *
- * print_alphabet() - prints small lettered alphabets from a to z
+ * Return: Always (0) Success
  */
 void print_alphabet(void)
 {
@@ -21,10 +20,5 @@ void print_alphabet(void)
 	for (v = 'a'; v <= 'z'; v++)
 		putchar(v);
 	putchar('\n');
-	return (0);
 }
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
+
