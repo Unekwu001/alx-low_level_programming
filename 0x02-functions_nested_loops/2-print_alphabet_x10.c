@@ -20,7 +20,7 @@ void print_alphabet_x10(void)
 
 	for (ko = 0; ko < 10; ko++)
 	{
-		for (qos = 'a'; qos = 'z'; qos++)
+		for (qos = 'a'; qos <= 'z'; qos++)
 			putchar(qos);
 		putchar('\n');
 	}
