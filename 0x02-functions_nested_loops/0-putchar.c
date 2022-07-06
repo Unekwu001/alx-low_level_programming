@@ -1,19 +1,24 @@
-#include "main.h"
-#include <stdio.h>
-/**
- * main - Entry point
+/*
+ * File: 0-putchar.c
  *
- * Return: Always (0) Success
+ * Auth: Unekwu Shaibu
+ *
+ */
+
+#include "main.h"
+
+/**
+ * main - Prints "_putchar" followed by a new line.
+ *
+ * Return: Always (0) Success. 
  */
 int main(void)
 {
-	char oya[8] = "_putchar";
-	int x;
+	char sapa[9] = "_putchar" ;
+	int v ;
 
-	for (x = 0; x <= 7; x++)
-		putchar(oya[x]);
+	for ( v = 0; v <= 7; v++ )
+		putchar(sapa[v]);
 	putchar('\n');
 	return (0);
-}
-
-
+}	
