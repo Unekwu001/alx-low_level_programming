@@ -8,7 +8,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - this is a description for the function that prints alphabet ten times
+ * print_alphabet_x10 - prints alphabet ten times
  * main - Prints "_putchar" followed by a new line.
  *
  * Return: Always (0) Success
@@ -23,6 +23,5 @@ void print_alphabet_x10(void)
 		putchar(b);
 		putchar('\n');
 	}
-	return (0);
 }
 
