@@ -5,7 +5,7 @@
  *
  * Return: Always (1) Success
  * and (0) Always failure
-
+ */
 #include "main.h"
 /**
  * _islower - redflags any character
