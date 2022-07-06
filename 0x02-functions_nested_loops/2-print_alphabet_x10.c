@@ -15,13 +15,13 @@
  */
 void print_alphabet_x10(void)
 {
-	int a;
-	int q;
+	int ko;
+	int qos;
 
-	for (a = 0; a < 10; a++)
+	for (ko = 0; ko < 10; ko++)
 	{
-		for (q = 'a'; q = 'z'; q++)
-			putchar(q);
+		for (qos = 'a'; qos = 'z'; qos++)
+			putchar(qos);
 		putchar('\n');
 	}
 }
