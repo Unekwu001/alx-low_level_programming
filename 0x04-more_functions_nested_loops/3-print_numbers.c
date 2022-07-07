@@ -8,7 +8,7 @@
  * Return: Always (1) Success and (0) Always failure
  *
  */
-void print_numbers(void);
+void print_numbers(void)
 {
 	int i;
 
