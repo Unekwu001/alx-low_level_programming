@@ -1,6 +1,4 @@
 /**
- * 3-islower.c - File name
- *
  * Author; Unekwu Shaibu
  *
  * Return: Always (1) Success
