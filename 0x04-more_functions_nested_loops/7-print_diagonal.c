@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagonal - This function prints the character \, n times to draw a line
+ * print_diagonal - This function prints the character \,n times to draw lines
  * File - 7-print_diagonal.c
  *
  * Author; Unekwu Shaibu
@@ -10,7 +10,9 @@
  */
 void print_diagonal(int n)
 {
-	int i,j;
+	int i;
+	int j;
+
 	if (n <= 0)
 	{
 		putchar('\n');
