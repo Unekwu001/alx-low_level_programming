@@ -1,6 +1,7 @@
 /**
+ * _islower - This function flags any thing aside lower cased alphabeth
  * File - 3-islower.c
- *_islower: This function flags an alphabet that is not a lowercase alphabet
+ *
  * Author; Unekwu Shaibu
  *
  * Return: Always (1) Success and (0) Always failure
