@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_sign - Write a function that checks for alphabetic character
  * File - 5-sign.c
@@ -8,7 +9,7 @@
  *
  *
  * @n: single alphabeth input
- */
+*/
 int print_sign(int n)
 {
 	if (n > 0)
