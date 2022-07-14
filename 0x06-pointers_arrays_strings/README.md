@@ -1,0 +1,1 @@
+THis directory contains functions which could prove useful when dealing with simple logical tasks
