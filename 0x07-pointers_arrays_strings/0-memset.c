@@ -1,9 +1,5 @@
 #include "main.h"
 /**
- * Owner - Unekwu Shaibu
- *
- * File name -  0-memset.c
- *
  * _memset - fill n bytes of memory with a constant value
  *
  * @s: pointer to memory area
