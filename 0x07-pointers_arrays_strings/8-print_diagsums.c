@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_diagsums - print sums of diagonals in matrix.
  * @a: matrix.
