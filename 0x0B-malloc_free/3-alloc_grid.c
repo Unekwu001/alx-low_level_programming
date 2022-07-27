@@ -12,6 +12,7 @@
 int **alloc_grid(int col, int row)
 {
 	int i, j, **grid;
+
 	grid = malloc(row * sizeof(*grid));
 	if (row < 1 || col < 1 || grid == 0)
 		return (NULL);
