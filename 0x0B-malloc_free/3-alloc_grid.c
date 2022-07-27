@@ -9,16 +9,16 @@
  * Return: pointer to the 2D array
  */
 
-int **alloc_grid(int col, int row)
+int **alloc_grid(int width, int height)
 {
 	int i, j, **grid;
 
-	grid = malloc(row * sizeof(*grid));
-	if (row < 1 || col < 1 || grid == 0)
+	grid = malloc(heigth * sizeof(*grid));
+	if (height < 1 || width < 1 || grid == 0)
 		return (NULL);
-	for (i = 0; i < row; i++)
+	for (i = 0; i < height; i++)
 	{
-		grid[i] = malloc(col * sizeof(**grid));
+		grid[i] = malloc(width * sizeof(**grid));
 		if (grid[i] == 0)
 		{
 			while (i--)
@@ -26,7 +26,7 @@ int **alloc_grid(int col, int row)
 			free(grid);
 			return (NULL);
 		}
-		for (j = 0; j < col; j++)
+		for (j = 0; j < width; j++)
 			grid[i][j] = 0;
 	}
 	return (grid);
