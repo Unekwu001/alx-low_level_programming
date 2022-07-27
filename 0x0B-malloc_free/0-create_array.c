@@ -19,6 +19,6 @@ char *create_array(unsigned int size, char arr)
 	if (size == 0 || array_alloc == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
-		arra_alloc[i] = arr;
+		array_alloc[i] = arr;
 	return (array_alloc);
 }
