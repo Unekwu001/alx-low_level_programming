@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _calloc - allocates memory for an array of a certain number of 
+ * _calloc - allocates memory for an array of a certain number of
  * elements each off the inputed byte size.
  * @nmemb: the number of elements.
  * @size: the byte size of each array element.
