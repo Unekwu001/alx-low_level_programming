@@ -5,9 +5,9 @@
 /**
  * print_strings - prints strings, followed by a new line.
  * @seperator: The string to be printed between stringds.
- * @n: 	The number of strings passed to the function.
+ * @n:Their number of strings passed to the function.
  * @...: A variable number of strings to be printed
- * Description: if seperator is NULL, 	it is not printed.
+ * Description:if seperator is NULL, it is not printed.
  * if one of the strings is NULL, (nil) is printed instead.
  */
 void print_strings(const char *seperator, const unsigned int n, ...)
@@ -22,12 +22,12 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	{
 		str = va_arg(strings, char *);
 
-		if (str == NULL	)
+		if (str == NULL)
 			printf("nil)");
 		else
 			printf("%s", str);
 
-		if (index != (n -1) && seperator != NULL)
+		if (index != (n - 1) && seperator != NULL)
 			printf("%s", seperator);
 	}
 	printf("\n");
