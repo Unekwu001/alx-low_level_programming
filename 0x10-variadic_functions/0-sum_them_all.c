@@ -3,7 +3,9 @@
 /**
  * sum_them_all - the sum of all its parameters
  * @n: number of parameters received
+ *
  * Return: 0 if n is 0 of the vsum of parameters
+ * ...: null
  */
 int sum_them_all(const unsigned int n, ...)
 {
