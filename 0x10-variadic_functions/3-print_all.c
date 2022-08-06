@@ -2,81 +2,68 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_char - print characters
- * @arguments: inputs arguments
- */
-void print_char(va_list arguments)
-{
-	printf("%c", va_arg(arguments, int));
-}
-/**
- * print_int - print integers
- * @arguments: input arguments
- */
-void print_int(va_list arguments)
-{
-	printf("%d", va_arg(arguments, int));
-}
-/**
- * print_float - prints float
- * @arguments: inputs arguments
- */
-void print_float(va_list arguments)
-{
-	printf("%f", va_arg(arguments, double));
-}
-/**
- * print_string - prints string
- * @arguments: input arguments
- */
-void print_string(va_list arguments)
-{
-	char *args = va_arg(arguments, char*);
-
-	if (args == NULL)
-	{
-		printf("%p", args);
-		return;
-	}
-	printf("%s", args);
-}
-/**
  * print_all - prints anything
- * @format: input string
+ * @format: a list of types of arguments passed to the function
+ *
+ * Return: no return
  */
 void print_all(const char * const format, ...)
 {
-	simbol_t identifier[] = {
-		{'c', print_char},
-		{'s', print_string},
-		{'f', print_float},
-		{'i', print_int}
-	};
-	int i = 0, j;
-	char *commc = "";
+	va_list valist;
+	unsigned int i = 0, j, c = 0;
+	char *str;
+	const char t_arg[] = "cifs";
 
-	va_list arguments;
-
-	va_start(arguments, format);
-
+	va_start(valist, format);
 	while (format && format[i])
 	{
 		j = 0;
-
-		while (j < 4)
+		while (t_arg[j])
 		{
-			if (identifier[j].all == format[i])
+			if (format[i] == t_arg[j] && c)
 			{
-				printf("%s", comma);
-				identifier[j].func(arguments);
-				commc = ", ";
-			}
-			j++;
+				printf(", ");
+				break;
+			}j++;
 		}
-		i++;
+		switch (format[i])
+		{
+		case 'c':
+			printf("%c", va_arg(valist, int)), c = 1;
+			break;
+		case 'i':
+			printf("%d", va_arg(valist, int)), c = 1;
+			break;
+		case 'f':
+			printf("%f", va_arg(valist, double)), c = 1;
+			break;
+		case 's':
+			str = va_arg(valist, char *), c = 1;
+			if (!str)
+			{
+				printf("(nil)");
+				break;
+			}
+			printf("%s", str);
+			break;
+		}i++;
 	}
-	printf("\n");
-	va_end(arguments);
+	printf("\n"), va_end(valist);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
