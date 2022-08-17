@@ -1,28 +1,30 @@
-0.Preprocessor~
-The script is used to run a C file through the preprocessor and save the result into another file.The C file name will be saved in the variable $CFILE.The output should be saved in the file c.
 
-1-compiler~
-The script is used to compile a C file but does not link.The C file name will be saved in the variable $CFILEThe output file should be named the same as the C file, but with the extension .o instead of .c.Example: if the C file is main.c, the output file should be main.o.
+## Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
 
-2.Assembler 
-The script is used to generate the assembly code of a C code and save it in an output file.The C file name will be saved in the variable $CFILE. The output file should be named the same as the C file, but with the extension .s instead of .c. 
-Example: if the C file is main.c, the output file should be main.s
+This repository contains programs written for the low-level programming and
+algorithm track at the Alx-Software Engineering program facilitated by ALX. I am learning about data
+structures, algorithms, and other low-level programming concepts while
+working in the C language. I update this repo with my learning progresses with hands-on projects as listed below:
 
-3-name~
-The script is used to compile a C file and creates an executable named cisfun.
-The C file name will be saved in the variable $CFILE
-
-4-puts.c~
-The script is used to print exactly "Programming is like building a multilingual puzzle, followed by a new line.Use the function puts.You are not allowed to use printf.Your program should end with the value 0
-
-5-printf.c~
-The script is used to print exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.use the function printf.You are not allowed to use the function puts.Your program should return 0. Your program should compile without warning when using the -Wall gcc option.
-
-6-size.c~
-The script written is a C program that prints the size of various types on the computer it is compiled and run on.You should produce the exact same output as in the example.Warnings are allowed.Your program should return 0.You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
-
-
-
-
-
+* [0x00. C - Hello, World](./0x00-hello_world)
+* [0x01. C - Variables, if, else, while](./0x01-variables_if_else_while)
+* [0x02. C - Functions, nested loops](./0x02-functions_nested_loops)
+* [0x03. C - debugging](./0x03-debugging)
+* [0x04. C - More functions, more nested loops](./0x04-more_functions_nested_loops)
+* [0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings)
+* [0x06. C - More pointers, arrays and strings](./0x06-pointers_arrays_strings)
+* [0x07. C - Even more pointers, arrays and strings](./0x07-pointers_arrays_strings)
+* [0x08. C - Recursion](./0x08-recursion)
+* [0x09. C - Static libraries](./0x09-static_libraries)
+* [0x0A. C - argc, argv](./0x0A-argc_argv)
+* [0x0B. C - malloc, free](./0x0B-malloc_free)
+* [0x0C. C - More malloc, free](./0x0C-more_malloc_free)
+* [0x0D-preprocessor](./0x0D-preprocessor)
+* [0x0E. C - Structures, typedef](./0x0E-structures_typedef)
+* [0x0F. C - Function pointers](./0x0F-function_pointers)
+* [0x10. C - Variadic functions](./0x10-variadic_functions)
+* [0x12. C - Singly Linked Lists](./0x12-singly_linked_lists)
+* [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists)
+* [0x14. C - Bit manipulation](./0x14-bit_manipulation)
+* [0x15. C - File I/O](./0x15-file_io)
 
