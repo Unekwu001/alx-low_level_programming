@@ -1,0 +1,4 @@
+all: compile_school
+
+compile_school:
+	gcc main.c school.c -o school

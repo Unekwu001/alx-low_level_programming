@@ -1,0 +1,7 @@
+all: compile_school
+
+CC = gcc
+SRC = main.c school.c
+
+compile_school:
+	${CC} ${SRC} -o school
